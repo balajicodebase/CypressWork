@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "open": "node_modules/.bin/cypress open"
+    "test": "node_modules/.bin/cypress run",
+    "dashboard": "npm run test -- --headed --browser chrome --record --key aef49338-10b3-470a-87cd-05e3fb278a94",
+    "singleSpec": "npm run test -- --spec \"cypress/integration/examples/Test1.js\"",
+    "multipleSpec": "npm run test -- --spec \"cypress/integration/examples/Test1.js,cypress/integration/examples/Test2.js\"",
+    "GreenKart": "npm run test -- --spec \"cypress/integration/examples/*.js\" --headed --browser chrome --record --key aef49338-10b3-470a-87cd-05e3fb278a94"
   },
   "author": "Balaji",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.2.0",
     "cypress-iframe": "^1.0.1"
-  }
+    }
 }
