@@ -8,7 +8,9 @@
     "dashboard": "npm run test -- --headed --browser chrome --record --key aef49338-10b3-470a-87cd-05e3fb278a94",
     "singleSpec": "npm run test -- --spec \"cypress/integration/examples/Test1.js\"",
     "multipleSpec": "npm run test -- --spec \"cypress/integration/examples/Test1.js,cypress/integration/examples/Test2.js\"",
-    "GreenKart": "npm run test -- --spec \"cypress/integration/examples/*.js\" --headed --browser chrome --record --key aef49338-10b3-470a-87cd-05e3fb278a94"
+    "GreenKart": "npm run test -- --spec \"cypress/integration/examples/*.js\" --headed --browser chrome --record --key aef49338-10b3-470a-87cd-05e3fb278a94",
+    "mockTest": "npm run test -- --spec \"cypress/integration/examples/fakeTest.js\" --headed -b chrome",
+    "cypress": "node_modules/.bin/cypress open"
   },
   "author": "Balaji",
   "license": "ISC",
